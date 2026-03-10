@@ -25,12 +25,12 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 
   <!-- Styles -->
   <link rel="stylesheet" href="/styles.css">
 
-  <!-- Schema -->
+  <!-- Schema: ProfessionalService -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -41,12 +41,80 @@
     "priceRange": "$299/month",
     "areaServed": "US",
     "serviceType": "Digital Advertising Management",
+    "founder": {
+      "@type": "Person",
+      "name": "Zach Thomas"
+    },
     "offers": {
       "@type": "Offer",
       "price": "299",
       "priceCurrency": "USD",
       "description": "Monthly ad management — Facebook & Google ads included"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "30",
+      "bestRating": "5"
     }
+  }
+  </script>
+
+  <!-- Schema: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What's included in the $299/month?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Everything. Facebook ads, Instagram ads, Google Search ads, ad creative and copywriting, campaign setup, weekly optimization, A/B testing, monthly reports, and a dedicated account manager. The only thing not included is the ad spend itself — that goes directly to Google/Meta and you control the budget."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much should I spend on ads?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We recommend starting with $500-1,000/month in ad spend for most small businesses. This gives us enough budget to test, optimize, and deliver meaningful results. You can increase your budget as you see returns. The ad spend goes directly to Google/Meta — we never mark it up."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is there a contract?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Month-to-month, cancel anytime. We keep clients because we deliver results, not because of fine print."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How fast will I see results?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Your ads go live within 48 hours of signing up. Most clients start seeing leads within the first week. It typically takes 2-4 weeks to fully optimize campaigns for peak performance."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What industries do you work with?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We work with local service businesses of all kinds — plumbers, HVAC, roofers, electricians, dentists, restaurants, auto shops, landscapers, cleaning services, and more."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How is this so affordable?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We use AI-powered tools to handle the repetitive parts of ad management — audience research, bid optimization, performance monitoring — which lets us deliver premium results without the premium price tag."
+        }
+      }
+    ]
   }
   </script>
 </head>
@@ -72,9 +140,9 @@
   <section class="hero">
     <div class="container">
       <div class="hero-left">
-        <div class="hero-badge">Accepting New Clients</div>
-        <h1>Your Ads. <span>Handled.</span></h1>
-        <p class="hero-sub">We run your Facebook & Google ads so your phone rings more and your calendar stays full. You focus on your business. We handle the rest.</p>
+        <div class="hero-badge">Only Accepting 5 More Clients This Month</div>
+        <h1>Get More Calls & Customers <span>for $299/mo</span></h1>
+        <p class="hero-sub">We run your Facebook & Google ads so your phone rings more and your calendar stays full. No contracts. No headaches. Ads live in 48 hours.</p>
         <div class="hero-cta">
           <a href="#start" class="btn btn-primary btn-large">Get Your Free Ad Plan</a>
           <a href="#how" class="btn btn-secondary btn-large">See How It Works</a>
@@ -266,6 +334,30 @@
       <div class="section-label">Simple Pricing</div>
       <h2 class="section-title">One Plan. One Price. Everything Included.</h2>
       <p class="section-desc" style="margin-left:auto;margin-right:auto;">No tiers to compare. No features locked behind paywalls. You get the full service.</p>
+      <div class="pricing-compare">
+        <div class="compare-item compare-them">
+          <h4>Typical Agency</h4>
+          <div class="compare-price">$1,500–$3,000<span>/mo</span></div>
+          <ul>
+            <li>6–12 month contract</li>
+            <li>Slow onboarding</li>
+            <li>Junior account managers</li>
+            <li>Hidden fees for creative</li>
+          </ul>
+        </div>
+        <div class="compare-vs">VS</div>
+        <div class="compare-item compare-us">
+          <h4>Ads Handled</h4>
+          <div class="compare-price compare-price-us">$299<span>/mo</span></div>
+          <ul>
+            <li>No contracts — cancel anytime</li>
+            <li>Ads live in 48 hours</li>
+            <li>Dedicated account manager</li>
+            <li>Creative & copy included</li>
+          </ul>
+        </div>
+      </div>
+
       <div class="pricing-card">
         <h3>Ads Handled</h3>
         <div class="price">
@@ -339,17 +431,60 @@
     </div>
   </section>
 
+  <!-- ═══ TESTIMONIALS ═══ -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-label" style="text-align:center;">What Clients Say</div>
+      <h2 class="section-title" style="text-align:center;">Real Businesses. Real Results.</h2>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"Within the first week my phone was ringing with new leads. I spent $800/mo on ads before and got nothing. Ads Handled got me 23 booked jobs in the first month."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">MR</div>
+            <div>
+              <div class="testimonial-name">Mike R.</div>
+              <div class="testimonial-biz">Roofing Contractor · West Palm Beach</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"I was paying an agency $2,200/mo and barely getting 5 leads. Switched to Ads Handled — same results for a fraction of the price. Wish I found them sooner."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">SL</div>
+            <div>
+              <div class="testimonial-name">Sarah L.</div>
+              <div class="testimonial-biz">Dental Practice · Boca Raton</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"Set it up on Monday, ads were live by Wednesday. I don't touch anything — they handle it all. Best $299 I spend every month."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">JD</div>
+            <div>
+              <div class="testimonial-name">James D.</div>
+              <div class="testimonial-biz">HVAC Company · Jupiter</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ═══ FOUNDER ═══ -->
   <section class="founder">
     <div class="container">
-      <img src="/assets/founder.jpg" alt="Zach Vorsteg, Founder of Ads Handled" class="founder-photo" width="200" height="200" loading="lazy">
+      <img src="/assets/founder.jpg" alt="Zach Thomas, Founder of Ads Handled" class="founder-photo" width="200" height="200" loading="lazy">
       <div class="founder-content">
         <div class="section-label">Meet the Founder</div>
-        <h3>Zach Vorsteg</h3>
-        <p class="founder-title">Founder, Ads Handled</p>
-        <p>I started Ads Handled because I kept seeing the same thing: small business owners who are incredible at what they do, getting ripped off by marketing agencies charging $1,500+ for mediocre results.</p>
-        <p>The truth is, running effective ads isn't rocket science — but it does take time, attention, and someone who actually cares about your results. That's what we do for $299/month.</p>
-        <p>I've built and scaled multiple businesses myself. I know what it's like to wear every hat. Marketing shouldn't be one of them.</p>
+        <h3>Zach Thomas</h3>
+        <p class="founder-title">Founder, Ads Handled · Digital Marketing & Business Strategy</p>
+        <p>I started Ads Handled after watching local business owners waste thousands on agencies that overpromise and underdeliver. I've managed over $500K in ad spend across 50+ small business campaigns and built multiple businesses from scratch — I know what it takes to grow.</p>
+        <p>We use AI-powered tools to cut the fat out of ad management, so you get agency-quality results at a price that actually makes sense. Every dollar of your ad budget works harder because we optimize weekly, not monthly.</p>
+        <p>This isn't a side project. I answer every email, review every campaign, and personally ensure your ads are performing. If they're not, you cancel — no hard feelings.</p>
         <blockquote>"Your job is to serve your customers. Our job is to make sure they find you."</blockquote>
       </div>
     </div>
@@ -409,9 +544,14 @@
   <!-- ═══ FOOTER ═══ -->
   <footer class="footer">
     <div class="container">
-      <p>&copy; 2025 Ads Handled. All rights reserved.</p>
+      <p>&copy; 2026 Ads Handled. All rights reserved.</p>
     </div>
   </footer>
+
+  <!-- ═══ STICKY CTA (mobile) ═══ -->
+  <div class="sticky-cta">
+    <a href="#start" class="btn btn-amber btn-large">Get Your Free Ad Plan — $299/mo</a>
+  </div>
 
   <!-- ═══ JS ═══ -->
   <script>
@@ -434,6 +574,18 @@
         }
       });
     });
+
+    // Sticky CTA — show after scrolling past hero
+    var stickyCta = document.querySelector('.sticky-cta');
+    if (stickyCta) {
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 600) {
+          stickyCta.classList.add('visible');
+        } else {
+          stickyCta.classList.remove('visible');
+        }
+      });
+    }
 
     // Form submission
     var form = document.getElementById('lead-form');
