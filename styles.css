@@ -8,8 +8,11 @@
   --blue-800: #1E40AF;
   --blue-50: #EFF6FF;
   --blue-100: #DBEAFE;
-  --amber-500: #F59E0B;
-  --amber-600: #D97706;
+  --orange-500: #FF6B35;
+  --orange-600: #E85D2A;
+  --orange-50: #FFF4EE;
+  --coral-500: #E8553D;
+  --coral-50: #FEF2F0;
   --green-500: #22C55E;
   --green-50: #F0FDF4;
   --gray-50: #F9FAFB;
@@ -154,21 +157,22 @@ ul { list-style: none; }
 }
 
 .btn-amber {
-  background: var(--amber-500);
-  color: var(--gray-900);
-  font-weight: 700;
+  background: var(--orange-500);
+  color: var(--white);
+  font-weight: 800;
+  letter-spacing: -0.01em;
 }
 
 .btn-amber:hover {
-  background: var(--amber-600);
+  background: var(--orange-600);
   transform: translateY(-1px);
-  box-shadow: var(--shadow-lg);
+  box-shadow: 0 10px 25px -5px rgba(255,107,53,0.4);
 }
 
 /* ═══ HERO ═══ */
 .hero {
   padding: 140px 0 80px;
-  background: linear-gradient(135deg, var(--blue-50) 0%, var(--white) 50%, #FFF7ED 100%);
+  background: linear-gradient(135deg, var(--blue-50) 0%, var(--white) 50%, var(--orange-50) 100%);
   position: relative;
   overflow: hidden;
 }
@@ -195,21 +199,21 @@ ul { list-style: none; }
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: var(--green-50);
-  color: var(--green-500);
+  background: var(--coral-50);
+  color: var(--coral-500);
   padding: 6px 14px;
   border-radius: 100px;
   font-size: 0.85rem;
   font-weight: 600;
   margin-bottom: 20px;
-  border: 1px solid rgba(34,197,94,0.2);
+  border: 1px solid rgba(232,85,61,0.2);
 }
 
 .hero-badge::before {
   content: '';
   width: 8px;
   height: 8px;
-  background: var(--green-500);
+  background: var(--coral-500);
   border-radius: 50%;
   animation: pulse 2s infinite;
 }
@@ -395,7 +399,7 @@ ul { list-style: none; }
   justify-content: center;
   font-size: 1.5rem;
   margin-bottom: 16px;
-  background: #FEF2F2;
+  background: var(--coral-50);
 }
 
 .pain-card h3 {
@@ -768,7 +772,7 @@ ul { list-style: none; }
 }
 
 .testimonial-stars {
-  color: var(--amber-500);
+  color: var(--orange-500);
   font-size: 1.1rem;
   letter-spacing: 2px;
   margin-bottom: 16px;
